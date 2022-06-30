@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<link rel="shortcut icon" href="" alt="Icon-Aplus-Dessert">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mocha Book</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="index" type="html" href="index.html">
+	</head>
+<body>
+	<!-- HEADER -->
+	<header class="lexend text-shadow text-center">
+		<h1 class="fs-40 lt-2 uppercase">Mocha</h1>
+		<h6 class="fs-34 lt-2 uppercase">Book</h6>
+		<span class="lt-2">&copy;ramadhan_perkasa</span>
+	</header>
+
+	<!-- BODY -->
+	<main>
+		<div id="content">
+			<div class="card">
+				<section class="input_section" id="inputSection">
+					<h2 id="h2InputSection" class="text-center lexend">Masukkan Buku Baru</h2>
+					<form id="inputBook">
+						<div class="input" id="sectionTitle">
+							<label for="inputBookTitle" class="block">Judul</label>
+							<input id="inputBookTitle" type="text" class="block" placeholder="Masukkan judul buku"/>
+							<small class="error-display" id="errorTitle">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionAuthor">
+							<label for="inputBookAuthor" class="block">Penulis</label>
+							<input id="inputBookAuthor" type="text" class="block" placeholder="Masukkan nama penulis buku"/>
+							<small class="error-display" id="errorAuthor">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionYear">
+							<label for="inputBookYear" class="block">Tahun</label>
+							<input id="inputBookYear" type="number" class="block" placeholder="Masukkan tahun terbit buku"/>
+							<small class="error-display" id="errorYear">Wajib Diisi</small>
+						</div>
+						<div class="flex align-center">
+							<input id="inputBookIsComplete" type="checkbox" />
+							<label for="inputBookIsComplete" class="selesai">selesai dibaca</label>
+						</div>
+						<div class="text-center">
+							<button id="bookSubmit" type="button" class="lexend">selesai dibaca</button>
+						</div>
+					</form>
+				</section>
+			</div>
+
+			<article class="card">
+				<section class="search_section book_shelf" id="searchSection">
+					<h2 id="searchSectionH2" class="text-center lexend uppercase">Cari Buku</h2>
+					<form id="searchBook">
+						<label for="searchBookTitle" class="block lt-2">Keyword</label>
+						<div class="flex">
+							<input id="searchBookTitle" type="text" placeholder="Pencarian Data"/>
+							<button id="searchSubmit" type="submit">cari</button>
+						</div>
+					</form>
+				
+					<div id="searchResult" class="book_list" style="width: 100%"></div>
+				</section>
+			</article>
+		
+			<div class="card">
+				<section class="book_shelf" id="bookShelfUncompleted">
+					<h2 id="uncompletedH2" class="text-center lexend uppercase">Belum selesai dibaca</h2>
+				
+					<div id="incompleteBookshelfList" class="book_list"></div>
+				</section>
+			</div>
+		</div>
+			
+		<section>
+			<article class="card">
+				<section class="book_shelf" id="bookShelfCompleted">
+					<h2 id="completedH2" class="text-center lexend uppercase">Selesai dibaca</h2>
+				
+					<div id="completeBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+		</section>
+	</main>
+
+	
+	<script src="assets/js/crd.js"></script>
+	<script src="assets/js/search.js"></script>
+	<script src="assets/js/swap.js"></script>
+	<script src="assets/js/scrollup.js"></script>
+</body>
+</html>
