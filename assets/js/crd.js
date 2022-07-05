@@ -2,7 +2,7 @@ function insertData(book) {
     let bookData = [];
 
 
-    if (localStorage.getItem(localStorageKey) === "") {
+    if (!localStorage.getItem(localStorageKey)) {
         alert(`Data buku [GAGAL DITAMBAHKAN]`);
         localStorage.setItem(localStorageKey, 0);
     }else{
